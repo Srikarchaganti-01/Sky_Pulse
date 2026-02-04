@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+     <div class="searchcon">
+            <div class="logo">
+                <div class="icon"><i class="fa-solid fa-cloud-sun"></i></div>
+                <div class="logtxt">Sky pulse</div>
+            </div>
+            <div class="search">
+                <input type="text" name="" id="search" placeholder="Enter city">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+   </header>
+   <main>
+    <div class="homeleft">
+        <div class="leftup">
+            <div class="cityname">Sky Pulse</div>
+            <div class="small">
+                <div class="short">Weather Condition</div>
+                <div class="blocker"></div>
+                <div class="tempa"></div>
+            </div>
+            <div class="feels">Feels like <span class="feel"></span></div>
+            <div class="tempmm">
+                <div class="min">
+                    <span class="label"><i class="fa-solid fa-temperature-arrow-down"></i> Min temp</span>
+                    <span class="value" id="minTemp">--°</span>
+                </div>
+                <div class="max">
+                    <span class="label"><i class="fa-solid fa-temperature-arrow-up"></i> Max temp</span>
+                    <span class="value" id="maxTemp">--°</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="leftdown">
+            <div class="card"  id="humid">
+                <div class="img"><i class="fa-solid fa-droplet"></i></div>
+                <div class="meta">
+                    <span class="label">Humidity</span>
+                    <span class="value" id="humidVal">--%</span>
+                </div>
+            </div>
+            <div class="card"  id="wind">
+                <div class="img"><i class="fa-solid fa-wind"></i></div>
+                <div class="meta">
+                    <span class="label">Wind speed</span>
+                    <span class="value" id="windVal">--m/s</span>
+                </div>
+            </div>
+            <div class="card"  id="press">
+                <div class="img"><i class="fa-solid fa-temperature-high"></i></div>
+                <div class="meta">
+                    <span class="label">Pressure</span>
+                    <span class="value" id="presVal">--hpa</span>
+                </div>
+            </div>
+            <div class="card"  id="visib">
+                <div class="img"><i class="fa-solid fa-eye"></i></div>
+                <div class="meta">
+                    <span class="label">Visibility</span>
+                    <span class="value" id="visibVal">--km</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="homeright">
+        <div class="cardcon">
+            <div class="card"  id="rise">
+                <div class="img"><i class="fa-solid fa-cloud-sun"></i></div>
+                <div class="meta">
+                    <span class="label">Sunrise</span>
+                    <span class="value" id="riseVal">--:--</span>
+                </div>
+            </div>
+            <div class="card"  id="set">
+                <div class="img"><i class="fa-solid fa-cloud-moon"></i></div>
+                <div class="meta">
+                    <span class="label">Sunset</span>
+                    <span class="value" id="setVal">--:--</span>
+                </div>
+            </div>
+        </div>
+        <div class="weatherimg">
+            <img id="weatherPic" src="assets/default.jpg" alt="Weather condition image">
+        </div>
+        
+    </div>
+   </main>
+
+
+   <script src="app.js"></script>
+
+
+</body>
+</html>
